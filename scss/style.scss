@@ -1,0 +1,422 @@
+// ========== FONTS ========== //
+@import "fonts";
+// ========== FONTS END ========== //
+
+// ========== EXTENDS ========== //
+@import "variables";
+// ========== EXTENDS END ========== //
+
+// ========== Jquery UI ========== //
+
+// ========== Jquery UI END ========== //
+
+// ========== COMMON STYLES ========== //
+html, body{
+    position: relative;
+	line-height: 1.8rem;
+	font-family: 'Arial';
+	font-size: 10px;
+	color: $main-clr;
+}
+
+.container{
+	overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+	line-height: 3.5rem;
+	color: $captions-clr;
+	font-family: 'League Gothic Regular';
+}
+
+h3{
+	font-size: 3rem;
+}
+
+a{
+	color: inherit;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.btn{
+	border: 1px solid $link-hover-border-clr;
+	border-bottom: 3px solid #00141e;
+	border-radius: 0;
+	background-color: #0878a7;
+	color: $link-hover-clr;
+	&:hover{
+		color: $link-hover-clr;
+		box-shadow: 0px 2px 0px 0px #d6d6d6;
+	}
+}
+
+.insertClr{
+	color: $captions-insert-clr;
+}
+// ========== COMMON STYLES END ========== //
+
+.logo{
+	margin-bottom: 1rem;
+	font-family: 'League Gothic Regular';
+	font-size: 3.2rem;
+}
+
+.nav{
+	padding: 1.6rem 0 1.1rem 0;
+}
+
+.navList{ 
+	display: flex;
+	justify-content: center;
+	&__items{
+		margin-right: 2rem;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__link{
+		display: block;
+		border: 1px solid transparent;
+		padding: .4rem 1.6rem;
+		height: 100%;
+		font-size: 1rem;
+		&:hover{
+			border: 1px solid $link-hover-border-clr;
+			background-color: #0878a7;
+			color: $link-hover-clr;
+			text-shadow: 0px -1px 0 rgba(0, 0, 0, .5);
+		}
+	}
+}
+
+.main{
+	border-bottom: 2px solid  $captions-insert-clr;
+	border-top: 2px solid  $captions-insert-clr;
+	padding: 9.1rem 0 0;
+	background: url(../img/Cognifide-test-psd.jpg) no-repeat;
+	background-size: cover;
+	&__caption{
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 1.9rem;
+		padding: 1.5rem 3rem;
+		line-height: 1;
+		background-color: rgba(255, 255, 255, .8);
+	}
+	&__caption_2{
+		font-size: 6rem;
+	}
+	&__caption_3{
+		font-size: 3.2rem;
+		margin-bottom: 7.7rem;
+	}
+}
+
+.reviews{
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.reviewsItem{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	position: relative;
+	border-top-left-radius: 20%;
+	border-bottom-left-radius: 20%;
+	min-height: 7rem;
+	background-color: rgba(255, 255, 255, .9);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 8%,rgba(255,255,255,1) 9%,rgba(255,255,255,1) 31%);
+	padding-left: 8.6rem;
+	&__img{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&__speech, &__author{
+		line-height: 1.7;
+		font-size: .9rem;
+	}
+	&__speech{
+		font-style: italic;
+	}
+}
+.content{
+	margin-bottom: 1.8rem;
+	border-bottom: 1px dotted $blocks-brd-clr;
+}
+
+.sidebar{
+	border-right: 1px dotted $blocks-brd-clr;
+	padding-top: 3.3rem;
+}
+
+.section{
+	margin-bottom: 1.7rem;
+	&:last-child{
+		padding-bottom: 4.5rem;
+	}
+	&__caption{
+		margin-bottom: .9rem;
+		font-size: 2.2rem;
+	}
+	&__text{
+		margin-bottom: 1.7rem;
+	}
+	&__posts{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 1.5rem;
+	}
+	&__img{
+		margin-bottom: .7rem;
+		margin-right: 1rem;
+	}
+	&__records{
+		flex-grow: 1;
+	}
+	&__info{
+		font-weight: bold;
+	}
+	&__forum{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 1.5rem;
+		color: #ddd;
+		&:hover{
+			color: #5c5c5c;
+		}
+	}
+	&__comments{
+		font-style: italic;
+	}
+	table{
+		width: 100%;
+	}
+	th, td{
+		border: 1px solid #fff;
+		padding: .9rem .5rem;
+	}
+	th{
+		background-color: $captions-clr;
+		color: $link-hover-clr;
+	}
+	tr:nth-child(even){
+		background-color: #c7e9fa;
+	}
+	tr:nth-child(odd){
+		background-color: #b1e1f8;
+	}
+	td{
+		color: $captions-clr;
+	}
+}
+
+.border-dotted{
+	margin: 0 -15px 0 0;
+	border-bottom: 1px dotted $blocks-brd-clr;
+}
+
+.centerInfo{
+	
+}
+
+.banner{
+	position: relative;
+	top: -1rem;
+	border-top: 2px solid  $captions-insert-clr;
+	border-right: 1px dotted $blocks-brd-clr;
+	border-bottom: 1px dotted $blocks-brd-clr;
+	padding: 3rem 1.3rem 1.8rem;
+	background-color: #fff;
+	&__caption{
+		margin-bottom: 1.7rem;
+		font-size: 3.2rem;
+	}
+	&__circle{
+		margin-right: 1rem;
+		margin-bottom: 1rem;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		border-radius: 50%;
+		height: 5rem;
+		width: 5rem;
+		background-color: $captions-insert-clr;
+		&:last-child{
+			margin-right: 0;
+			margin-bottom: 0;
+		}
+		&_bg{
+			background: url(../img/man.png) no-repeat;
+			background-color: $captions-insert-clr;
+			background-size: 100%;
+		}
+	}
+	&__circles{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__circlesWrap{
+		min-width: 130px;
+	}
+	&__circleText{
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin-top: -.8rem;
+		line-height: 1.5;
+		font-size: .8rem;
+		font-weight: bold;
+		color: $link-hover-clr;
+	}
+	&__text{
+		font-size: 1rem;
+	}
+	&__btn{
+		margin-top: 2.9rem;
+	}
+	&__feedback{
+		display: flex;
+		align-items: center;
+		position: absolute;
+		right: -5px;
+		bottom: 1.8rem;
+		padding: .5rem;
+		line-height: 1;
+		font-size: 1rem;
+		color: $captions-clr;
+		background: url(../img/banner-line.png) no-repeat;
+		background-size: cover;
+	}
+	&__thumbUp, &__forum{
+		line-height: 1;
+		margin: 0 1rem;
+		font-size: 1.4rem;
+		color: #fff;
+		&:hover{
+			color: $captions-clr;
+		}
+	}
+}
+
+.advertWrap{
+	margin-bottom: 1.5rem;
+	&::after{
+		content: '';
+		display: block;
+		height: 6px;
+		background: url(../img/shadow-small.png) no-repeat;
+		background-size: 100%;
+	}
+	&__inner{
+		padding: 2.5rem 3rem 2.5rem 3rem;
+		border-top-left-radius: 1.2rem;
+		background-color: #eaeaea;
+	}
+	&__caption{
+		margin-bottom: .5rem;
+		line-height: 2.5rem;
+		font-size: 2.2rem;
+	}
+	&__date{
+		margin-bottom: 3.4rem;
+	}
+	&__text{
+		
+	}
+	&__link{
+		color: $captions-clr;
+	}
+	&__feedback{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding: .5rem;
+		line-height: 1;
+		font-size: 1rem;
+		color: $captions-clr;
+		background-color: #f4f3f3;
+	}
+	&__thumbUp, &__forum{
+		margin: 0 .5rem;
+		font-size: 1.3rem;
+		color: #90d4f5;
+		&:hover{
+			color: $captions-insert-clr;
+		}
+	}
+}
+
+.ad{
+	margin-bottom: 1.5rem;
+	&__inner{
+		padding: 3.5rem 0;
+		background: linear-gradient(to bottom, rgba(232,231,231,1) 0%, rgba(244,243,243,1) 100%);
+	}
+	&__bg{
+		background: url(../img/shadow.png) no-repeat;
+		background-size: 100%;
+		height: 7px;
+	}
+}
+
+.find{
+	&__caption{
+		margin-bottom: 1.7rem;
+		font-size: 3.2rem;
+	}
+}
+.map{
+	border-top: 1px solid #bfbfbf;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	border-bottom: 1px dotted $blocks-brd-clr;
+	padding: 1.6rem 0;
+	&__caption{
+		font-size: 2.2rem;
+	}
+	&__nav{
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__items{
+		margin-right: 3.4rem;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__link{
+		display: block;
+		border: 1px solid transparent;
+		padding: .4rem .6rem;
+		height: 100%;
+		font-size: 1rem;
+		&:hover{
+			border: 1px solid $link-hover-border-clr;
+			background-color: #0878a7;
+			color: $link-hover-clr;
+			text-shadow: 0px -1px 0 rgba(0, 0, 0, .5);
+		}
+	}
+}
+
+.rights{
+	padding: 1.3rem 0;
+}
+
+.circles{
+	
+}
+
+@import "media";

@@ -1,0 +1,434 @@
+/* Regular */
+@font-face {
+  font-family: 'League Gothic Italic';
+  src: url("../fonts/leaguegothic-italic-webfont.eot");
+  src: url("../fonts/leaguegothic-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-italic-webfont.woff") format("woff"), url("../fonts/leaguegothic-italic-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+/* Italic */
+@font-face {
+  font-family: 'League Gothic Regular';
+  src: url("../fonts/leaguegothic-regular-webfont.eot");
+  src: url("../fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-regular-webfont.woff") format("woff"), url("../fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Condensed */
+@font-face {
+  font-family: 'League Gothic Condensed';
+  src: url("../fonts/leaguegothic-condensed-regular-webfont.eot");
+  src: url("../fonts/leaguegothic-condensed-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-condensed-regular-webfont.woff") format("woff"), url("../fonts/leaguegothic-condensed-regular-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Condensed Italic */
+@font-face {
+  font-family: 'League Gothic Condensed';
+  src: url("../fonts/leaguegothic-condensed-italic-webfont.eot");
+  src: url("../fonts/leaguegothic-condensed-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-condensed-italic-webfont.woff") format("woff"), url("../fonts/leaguegothic-condensed-italic-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+html, body {
+  position: relative;
+  line-height: 1.8rem;
+  font-family: 'Arial';
+  font-size: 10px;
+  color: #5c5c5c; }
+
+.container {
+  overflow: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 3.5rem;
+  color: #076e9f;
+  font-family: 'League Gothic Regular'; }
+
+h3 {
+  font-size: 3rem; }
+
+a {
+  color: inherit; }
+  a:hover {
+    text-decoration: none; }
+
+.btn {
+  border: 1px solid #045279;
+  border-bottom: 3px solid #00141e;
+  border-radius: 0;
+  background-color: #0878a7;
+  color: #fff; }
+  .btn:hover {
+    color: #fff;
+    box-shadow: 0px 2px 0px 0px #d6d6d6; }
+
+.insertClr {
+  color: #22aaec; }
+
+.logo {
+  margin-bottom: 1rem;
+  font-family: 'League Gothic Regular';
+  font-size: 3.2rem; }
+
+.nav {
+  padding: 1.6rem 0 1.1rem 0; }
+
+.navList {
+  display: flex;
+  justify-content: center; }
+  .navList__items {
+    margin-right: 2rem; }
+    .navList__items:last-child {
+      margin-right: 0; }
+  .navList__link {
+    display: block;
+    border: 1px solid transparent;
+    padding: .4rem 1.6rem;
+    height: 100%;
+    font-size: 1rem; }
+    .navList__link:hover {
+      border: 1px solid #045279;
+      background-color: #0878a7;
+      color: #fff;
+      text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.5); }
+
+.main {
+  border-bottom: 2px solid #22aaec;
+  border-top: 2px solid #22aaec;
+  padding: 9.1rem 0 0;
+  background: url(../img/Cognifide-test-psd.jpg) no-repeat;
+  background-size: cover; }
+  .main__caption {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1.9rem;
+    padding: 1.5rem 3rem;
+    line-height: 1;
+    background-color: rgba(255, 255, 255, 0.8); }
+  .main__caption_2 {
+    font-size: 6rem; }
+  .main__caption_3 {
+    font-size: 3.2rem;
+    margin-bottom: 7.7rem; }
+
+.reviews {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.reviewsItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+  min-height: 7rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 8%, white 9%, white 31%);
+  padding-left: 8.6rem; }
+  .reviewsItem__img {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .reviewsItem__speech, .reviewsItem__author {
+    line-height: 1.7;
+    font-size: .9rem; }
+  .reviewsItem__speech {
+    font-style: italic; }
+
+.content {
+  margin-bottom: 1.8rem;
+  border-bottom: 1px dotted #d5d5d5; }
+
+.sidebar {
+  border-right: 1px dotted #d5d5d5;
+  padding-top: 3.3rem; }
+
+.section {
+  margin-bottom: 1.7rem; }
+  .section:last-child {
+    padding-bottom: 4.5rem; }
+  .section__caption {
+    margin-bottom: .9rem;
+    font-size: 2.2rem; }
+  .section__text {
+    margin-bottom: 1.7rem; }
+  .section__posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.5rem; }
+  .section__img {
+    margin-bottom: .7rem;
+    margin-right: 1rem; }
+  .section__records {
+    flex-grow: 1; }
+  .section__info {
+    font-weight: bold; }
+  .section__forum {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: #ddd; }
+    .section__forum:hover {
+      color: #5c5c5c; }
+  .section__comments {
+    font-style: italic; }
+  .section table {
+    width: 100%; }
+  .section th, .section td {
+    border: 1px solid #fff;
+    padding: .9rem .5rem; }
+  .section th {
+    background-color: #076e9f;
+    color: #fff; }
+  .section tr:nth-child(even) {
+    background-color: #c7e9fa; }
+  .section tr:nth-child(odd) {
+    background-color: #b1e1f8; }
+  .section td {
+    color: #076e9f; }
+
+.border-dotted {
+  margin: 0 -15px 0 0;
+  border-bottom: 1px dotted #d5d5d5; }
+
+.banner {
+  position: relative;
+  top: -1rem;
+  border-top: 2px solid #22aaec;
+  border-right: 1px dotted #d5d5d5;
+  border-bottom: 1px dotted #d5d5d5;
+  padding: 3rem 1.3rem 1.8rem;
+  background-color: #fff; }
+  .banner__caption {
+    margin-bottom: 1.7rem;
+    font-size: 3.2rem; }
+  .banner__circle {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    background-color: #22aaec; }
+    .banner__circle:last-child {
+      margin-right: 0;
+      margin-bottom: 0; }
+    .banner__circle_bg {
+      background: url(../img/man.png) no-repeat;
+      background-color: #22aaec;
+      background-size: 100%; }
+  .banner__circles {
+    display: flex;
+    justify-content: space-between; }
+  .banner__circlesWrap {
+    min-width: 130px; }
+  .banner__circleText {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -.8rem;
+    line-height: 1.5;
+    font-size: .8rem;
+    font-weight: bold;
+    color: #fff; }
+  .banner__text {
+    font-size: 1rem; }
+  .banner__btn {
+    margin-top: 2.9rem; }
+  .banner__feedback {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: -5px;
+    bottom: 1.8rem;
+    padding: .5rem;
+    line-height: 1;
+    font-size: 1rem;
+    color: #076e9f;
+    background: url(../img/banner-line.png) no-repeat;
+    background-size: cover; }
+  .banner__thumbUp, .banner__forum {
+    line-height: 1;
+    margin: 0 1rem;
+    font-size: 1.4rem;
+    color: #fff; }
+    .banner__thumbUp:hover, .banner__forum:hover {
+      color: #076e9f; }
+
+.advertWrap {
+  margin-bottom: 1.5rem; }
+  .advertWrap::after {
+    content: '';
+    display: block;
+    height: 6px;
+    background: url(../img/shadow-small.png) no-repeat;
+    background-size: 100%; }
+  .advertWrap__inner {
+    padding: 2.5rem 3rem 2.5rem 3rem;
+    border-top-left-radius: 1.2rem;
+    background-color: #eaeaea; }
+  .advertWrap__caption {
+    margin-bottom: .5rem;
+    line-height: 2.5rem;
+    font-size: 2.2rem; }
+  .advertWrap__date {
+    margin-bottom: 3.4rem; }
+  .advertWrap__link {
+    color: #076e9f; }
+  .advertWrap__feedback {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .5rem;
+    line-height: 1;
+    font-size: 1rem;
+    color: #076e9f;
+    background-color: #f4f3f3; }
+  .advertWrap__thumbUp, .advertWrap__forum {
+    margin: 0 .5rem;
+    font-size: 1.3rem;
+    color: #90d4f5; }
+    .advertWrap__thumbUp:hover, .advertWrap__forum:hover {
+      color: #22aaec; }
+
+.ad {
+  margin-bottom: 1.5rem; }
+  .ad__inner {
+    padding: 3.5rem 0;
+    background: linear-gradient(to bottom, #e8e7e7 0%, #f4f3f3 100%); }
+  .ad__bg {
+    background: url(../img/shadow.png) no-repeat;
+    background-size: 100%;
+    height: 7px; }
+
+.find__caption {
+  margin-bottom: 1.7rem;
+  font-size: 3.2rem; }
+
+.map {
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf; }
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px dotted #d5d5d5;
+  padding: 1.6rem 0; }
+  .footer__caption {
+    font-size: 2.2rem; }
+  .footer__nav {
+    display: flex;
+    justify-content: flex-end; }
+  .footer__items {
+    margin-right: 3.4rem; }
+    .footer__items:last-child {
+      margin-right: 0; }
+  .footer__link {
+    display: block;
+    border: 1px solid transparent;
+    padding: .4rem .6rem;
+    height: 100%;
+    font-size: 1rem; }
+    .footer__link:hover {
+      border: 1px solid #045279;
+      background-color: #0878a7;
+      color: #fff;
+      text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.5); }
+
+.rights {
+  padding: 1.3rem 0; }
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .reviewsItem {
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%; } }
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .reviewsItem {
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%; } }
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .reviewsItem {
+    border-top-left-radius: 23%;
+    border-bottom-left-radius: 23%; } }
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .reviewsItem {
+    border-top-left-radius: 19%;
+    border-bottom-left-radius: 19%; }
+
+  .banner__feedback {
+    right: 0; }
+
+  .footer__items {
+    margin-right: .3rem; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  html, body {
+    font-size: 8px; }
+
+  .main {
+    padding: 5.1rem 0 0; }
+    .main__caption {
+      margin-bottom: 1.5rem;
+      padding: 1rem 3rem; }
+    .main__caption_2 {
+      font-size: 4rem; }
+    .main__caption_3 {
+      font-size: 2.2rem;
+      margin-bottom: 4.7rem; }
+
+  .reviews {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+
+  .reviewsItem {
+    min-height: 8.6rem;
+    padding-left: 9.6rem;
+    border-top-left-radius: 27%;
+    border-bottom-left-radius: 27%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 4%, white 5%, white 10%); }
+    .reviewsItem__speech, .reviewsItem__author {
+      line-height: 1.7;
+      font-size: 1.2rem; }
+
+  .banner {
+    margin-bottom: 1rem;
+    padding: 3rem 1.3rem 4.5rem; }
+    .banner__circlesWrap {
+      min-width: 110px; }
+    .banner__feedback {
+      left: 15px;
+      right: 15px;
+      bottom: 0; }
+
+  .footer {
+    border-bottom: 1px dotted #d5d5d5;
+    padding: 1rem 0; }
+    .footer__caption {
+      width: 100%;
+      text-align: center;
+      font-size: 1.6rem; }
+    .footer__nav {
+      justify-content: center;
+      width: 100%; }
+    .footer__link {
+      padding: .2rem .4rem; } }
+/* Custom, iPhone Retina */
+
+/*# sourceMappingURL=style.css.map */
