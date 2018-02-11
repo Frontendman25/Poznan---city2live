@@ -409,13 +409,13 @@ a {
 
   .banner {
     margin-bottom: 1rem;
-    padding: 3rem 1.3rem 4.5rem; }
+    padding: 3rem 1.3rem 5.5rem; }
     .banner__circlesWrap {
       min-width: 110px; }
     .banner__feedback {
       left: 15px;
       right: 15px;
-      bottom: 0; }
+      bottom: 1.5rem; }
 
   .footer {
     border-bottom: 1px dotted #d5d5d5;
